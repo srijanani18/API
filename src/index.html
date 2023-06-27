@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-1.6.4.js"></script>
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="http://localhost:8080/api/punch/out" method="POST">
+        <input type="number" name="id">
+       
+        <input type="text" name="date_now">
+        <input type="text" name="time_now">
+       
+        <input type="submit" value="Submit">
+
+
+    </form>
+
+    <form action="http://localhost:8080/api/punch/in" method="POST">
+        <input type="number" name="id">
+        <input type="number" name="schedule_id">
+        <input type="text" name="date_now">
+        <input type="text" name="time_now">
+        <input type="text" name="time_in">
+        <input type="text" name="logstatus">
+        <input type="submit" value="Submit">
+
+
+    </form>
+
+
+    
+</body>
+</html>
